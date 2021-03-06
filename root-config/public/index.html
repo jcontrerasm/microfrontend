@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boilerplate React</title>
+    <meta name="importmap-type" content="systemjs-importmap">
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; }
+    </style>
+    <script type="systemjs-importmap">
+      {
+        "imports": {
+          "@mkp/home": "http://localhost:8081/mkp-home.js"
+        }
+      }
+    </script>
+    <script type="systemjs-importmap"
+    src="https://storage.googleapis.com/react.microfrontends.app/importmap.json"></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.2.5/dist/system.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.2.5/dist/extras/amd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.2.5/dist/extras/named-exports.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.2.5/dist/extras/named-register.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/import-map-overrides/dist/import-map-overrides.js"></script>
+    <script src="https://unpkg.com/zone.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
